@@ -1,0 +1,143 @@
+\section{Exam January 29 2021}
+\subsection{Systems of linear equations (15 points)}
+\subsubsection{Compute the set of solutions to the following system of linear equations (10 points)}
+\begin{equation*}
+    \sysdelim..\systeme{
+   3w + 6x + 6y + 15z = 21, 
+   2w + 4x + 7y + 19z = 20, 
+   3w + 6x + 4y + 9z = 17
+    }
+  \end{equation*}
+
+
+For the next question consider the matrix
+\begin{equation*}
+    A = \begin{bmatrix}
+        3 & 6 & 6 & 15 \\ 
+        2 & 4 & 7 & 19 \\ 
+        3 & 6 & 4 & 9
+    \end{bmatrix}
+\end{equation*}
+
+\subsubsection{Compute the rank and the dimensions of the row and column space of \(A\). Give a basis for the null space of \(A\). (5 points)}
+
+
+\subsection{Determinants (6 points)}
+Consider the matrix
+\begin{equation*}
+    A = \begin{bmatrix}
+        0 & 2 & 3 & 3 \\ 
+        1 & -1 & 2 & -2 \\ 
+        0 & 1 & 3 & 1 \\ 
+        0 & 4 & 2 & -1 
+    \end{bmatrix}
+\end{equation*}
+
+\subsubsection{Compute the determinant of \(A\). Is \(A\) invertible? (6 points)}
+
+
+\subsection{Eigenvectors and eigenvalues (12 points)}
+For this problem consider the matrix
+\begin{equation*}
+    A = \begin{bmatrix}
+        -3 & -2 \\ 
+        3 & 4
+    \end{bmatrix}
+\end{equation*}
+
+\subsubsection{Compute the eigenvectors and eigenvalues of the matrix \(A\). (12 points)}
+
+\subsection{Vector spaces (10 points)}
+Let \(v\) be the vector
+\begin{equation*}
+    v = \begin{bmatrix}
+        1 \\ 2
+    \end{bmatrix}
+\end{equation*}
+
+and consider the subset
+\begin{equation*}
+    V = \{ A \in M_{2,2} | v^T A = (Av)^T \}
+\end{equation*}
+
+of the vector space \(M_{2,2}\) of 2x2-matrices. Here \(v^T\) is the transpose of \(v\). Consider also the matrix 
+\begin{equation*}
+    B = \begin{bmatrix}
+        1 & 3 \\ 
+        3 & 1
+    \end{bmatrix}
+\end{equation*}
+
+\subsubsection{Is the matrix \(B\) an element in \(V\)? Argue for your answer (3 points)}
+
+For the next question you may use the following equalities
+\begin{align*}
+    (D + E)^T &= D^T + E^T \\
+    (cD)^T &= c(D^T) 
+\end{align*}
+
+You do not have to argue for these or prove them. These equalities hold for all matrices \(D, E\) and scalars \(c\) whenever \(D\) and \(E\) have the same dimensions. 
+
+
+\subsubsection{Is \(V\) a subspace of \(M_{2,2}\)? Argue for your answer. (7 points)}
+
+
+\subsection{Linear independence (10 points)}
+Consider the following three polynomials
+\begin{align*}
+    p_1(x) &= x^3 -2x + 1 \\ 
+    p_2(x) &= x^2 + 4x + 2 \\ 
+    p_3(x) &= x^3 - x^2 + 1
+\end{align*}
+
+\subsubsection{Are the polynomials \(p_1,p_2 \text{and} p_3\)  linearly independent considered as vectors of the vector space \(P_3\) of polynomials of degree at most 3? Argue for your answer (10 points)}
+
+
+
+\subsection{PageRank (7 points)}
+Consider the web consisting of 5 pages with links as indicated in the below diagram. 
+
+{\centering
+\includegraphics[width=0.3\textwidth]{img/2021-01-28.png}
+}
+
+\subsubsection{ Construct the matrix \(M\) for which the page ranking for the above web is an eigenvector for eigenvalue 1. The matrix should take dangling nodes into account and should use damping factor 0. Note that you are not asked to compute the eigenvector of \(M\). (7 points)}
+
+
+
+
+\subsection{Gradients and the chain rule (12 points)}
+For the questions below, consider the function \(f\) defined as
+\begin{equation*}
+    f(x,y) = (x-y)^3
+\end{equation*}
+
+\subsubsection{Compute the gradient of \(f\) (6 points)}
+
+For the next subquestion, suppose we are given functions \(g\) and \(h\) satisfying 
+\begin{align*}
+    g(0) &= 1 \\ 
+    h(0) &= 0 \\ 
+    g'(0) &= 2 \\ 
+    h'(0) &= 1
+\end{align*}
+and let \(k\) be the function defined as \(k(t)=f(g(t),h(t))\), where \(f\) is as above. 
+
+\subsubsection{What is the value of \(k'(0)\)? (6 points)}
+
+
+
+\subsection{Taylor series (8 points)}
+\subsubsection{Compute the 2nd order Taylor polynomial for the function \(f(x) = e^{x^2}\) around the basepoint 1. (8 points)}
+
+
+
+
+\subsection{Optimisation (10 points)}
+\subsubsection{Use Lagrange multipliers to find the pair \((x,y)\) with \(y > 0\) locally minimizing the function \(f(x,y)=x+4y\) under the constraint \(y^2+xy = 1 \). (10 points)}
+
+
+\subsection{Double integrals (10 points)}
+For this question, consider the region D in the plane bounded from below by the straight line from (0, 0) to (2, 1) and from above by the curve given by \(y = -x^2 +\frac{5}{2}x\) and between the lines \(x=0\) and \(x=2\). 
+
+\subsubsection{Compute the value of the double integral \(\int\int_Df(x,y)dA\) where \(f(x,y)=x^2\)(10 points)}
